@@ -12,26 +12,25 @@ Write a Python program using nested lists to compare the quantities of different
 8. Stop the program.
 
 ### Flowchart
-'''mermaid 
+```mermaid
 flowchart TD
-    A([Start]) --> B[Initialize product names and warehouse stock using nested lists]
-    B --> C[Set stock targets for each product]
-    C --> D[Select a product]
-    D --> E[Calculate total quantity across warehouses]
-    E --> F{Compare available stock with target}
-    F -- Stock is less than target --> G[Identify shortage]
-    F -- Stock is greater than target --> H[Identify surplus]
-    F -- Stock equals target --> I[Mark stock as sufficient]
-    G --> J[Calculate required units]
-    H --> K[Calculate excess units]
-    I --> L{Are more products available?}
-    J --> L
-    K --> L
-    L -- Yes --> D
-    L -- No --> M[Determine transfers from surplus warehouses to shortage warehouses]
-    M --> N[Display stock status and required transfers]
-    N --> O([Stop])
-'''
+    A([Start]) --> B[Initialize products, stock and target lists]
+    B --> C[Set i = 0]
+    C --> D{Is i less than number of products?}
+    D -- Yes --> E[Calculate total stock from both warehouses]
+    E --> F[Calculate difference = target - total]
+    F --> G[Display product name and total stock]
+    G --> H{Is difference greater than 0?}
+    H -- Yes --> I[Display Short by difference]
+    H -- No --> J{Is difference less than 0?}
+    J -- Yes --> K[Display Surplus = -difference]
+    J -- No --> L[Display Target met]
+    I --> M[Increment i by 1]
+    K --> M
+    L --> M
+    M --> D
+    D -- No --> N([Stop])
+```
 ### Code
 products = ["Pen", "Book", "Bag"]
 stock = [[20, 10], [5, 15], [8, 4]]  # warehouse 1, warehouse
