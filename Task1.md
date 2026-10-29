@@ -40,16 +40,16 @@ flowchart TD
     N -- No --> O([Stop])
 ```
 ### Code
-roads = ["Main", "Park", "Lake"]
-counts = [[40, 80, 120], [30, 45, 60], [50, 90, 110]]
-capacity = 100
-for i in range(len(roads)):
+roads = ["Main", "Park", "Lake"]\n
+counts = [[40, 80, 120], [30, 45, 60], [50, 90, 110]]\n
+capacity = 100\n
+for i in range(len(roads)):\n
     peak = max(counts[i])
     level = "High" if peak > capacity else "Normal"
     print(roads[i], "peak:", peak, level)'''
 
 ### Sample Input
-Roads = ["Main", "Park", "Lake"]
+Roads = ["Main", "Park", "Lake"]\n
 
 Vehicle Counts:
 Main Road: 40, 80, 120
@@ -59,7 +59,7 @@ Lake Road: 50, 90, 110
 Capacity = 100
 
 ### Sample Output
-Main peak: 120 High
-Park peak: 60 Normal
+Main peak: 120 High\n
+Park peak: 60 Normal\n
 Lake peak: 110 High
 
