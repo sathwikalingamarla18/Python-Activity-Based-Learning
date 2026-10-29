@@ -18,7 +18,7 @@ To develop a Python program to analyze traffic flow across multiple roads during
 11. Repeat the process for all roads.
 12. Stop the program.
 
- '''Mermaid Flowchart
+ ### '''Mermaid Flowchart
  flowchart TD
     A([Start]) --> B[Initialize road names]
     B --> C[Store vehicle counts for each road]
@@ -37,7 +37,8 @@ To develop a Python program to analyze traffic flow across multiple roads during
     M --> N[Display road analysis]
     N --> O{Are more roads available?}
     O -- Yes --> E
-    O -- No --> P([Stop])'''
+    O -- No --> P([Stop])
+'''
 How to understand the flowchart:
 - Oval: Start and stop.
 - Rectangle: Processing steps.
@@ -45,7 +46,7 @@ How to understand the flowchart:
 - Arrows: Direction of program execution.
 -
 - ### Code:
-- roads = ["Main Road", "Park Road", "Lake Road"]
+roads = ["Main Road", "Park Road", "Lake Road"]
 counts = [
     [40, 80, 120],
     [30, 45, 60],
