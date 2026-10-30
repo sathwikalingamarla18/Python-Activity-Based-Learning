@@ -58,8 +58,11 @@ for i in range(len(roads)):
 Roads = ["Main", "Park", "Lake"]
 
 Vehicle Counts:
+
 Main Road: 40, 80, 120
+
 Park Road: 30, 45, 60
+
 Lake Road: 50, 90, 110
 
 Capacity = 100
