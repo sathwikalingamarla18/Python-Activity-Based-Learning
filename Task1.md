@@ -40,13 +40,13 @@ flowchart TD
     N -- No --> O([Stop])
 ```
 ### Code
-roads = ["Main", "Park", "Lake"]\n
+roads = ["Main", "Park", "Lake"]
 
-counts = [[40, 80, 120], [30, 45, 60], [50, 90, 110]]\n
+counts = [[40, 80, 120], [30, 45, 60], [50, 90, 110]]
 
-capacity = 100\n
+capacity = 100
 
-for i in range(len(roads)):\n
+for i in range(len(roads)):
 
     peak = max(counts[i])
     
@@ -55,7 +55,7 @@ for i in range(len(roads)):\n
     print(roads[i], "peak:", peak, level)'''
 
 ### Sample Input
-Roads = ["Main", "Park", "Lake"]\n
+Roads = ["Main", "Park", "Lake"]
 
 Vehicle Counts:
 Main Road: 40, 80, 120
