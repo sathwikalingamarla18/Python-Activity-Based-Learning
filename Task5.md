@@ -34,29 +34,44 @@ flowchart TD
 
 ### Code
 wards = ["A", "B"]
+
 beds = [[8, 10, 9], [5, 7, 6]]
+
 capacity = [10, 8]
+
 for i in range(len(wards)):
+
     for day in range(len(beds[i])):
+    
         percent = beds[i][day] / capacity[i] * 100
+        
         print(wards[i], "day", day + 1, percent, "%")
+        
         if beds[i][day] > capacity[i]:
+        
             print("Capacity exceeded!")
 
 ### Sample Input
 Wards = ["A", "B"]
 
 Bed Occupancy:
+
 Ward A = [8, 10, 9]
+
 Ward B = [5, 7, 6]
 
 Capacity = [10, 8]
 
 ### Sample Output
 A day 1 80.0 %
+
 A day 2 100.0 %
+
 A day 3 90.0 %
+
 B day 1 62.5 %
+
 B day 2 87.5 %
+
 B day 3 75.0 %
 
