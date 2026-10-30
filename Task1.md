@@ -65,7 +65,9 @@ Lake Road: 50, 90, 110
 Capacity = 100
 
 ### Sample Output
-Main peak: 120 High\n
-Park peak: 60 Normal\n
+Main peak: 120 High
+
+Park peak: 60 Normal
+
 Lake peak: 110 High
 
