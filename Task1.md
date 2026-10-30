@@ -41,11 +41,17 @@ flowchart TD
 ```
 ### Code
 roads = ["Main", "Park", "Lake"]\n
+
 counts = [[40, 80, 120], [30, 45, 60], [50, 90, 110]]\n
+
 capacity = 100\n
+
 for i in range(len(roads)):\n
+
     peak = max(counts[i])
+    
     level = "High" if peak > capacity else "Normal"
+    
     print(roads[i], "peak:", peak, level)'''
 
 ### Sample Input
