@@ -30,11 +30,17 @@ flowchart TD
 
 ### Code
 branches = ["East", "West"]
+
 products = ["Pen", "Book", "Bag"]
+
 sales = [[10, 20, 5], [15, 12, 8]]
+
 for i in range(len(branches)):
+
     print(branches[i], "total:", sum(sales[i]))
+    
     best = sales[i].index(max(sales[i]))
+    
     print("Best product:", products[best])
 
 ### Sample Input
@@ -43,12 +49,17 @@ Branches = ["East", "West"]
 Products = ["Pen", "Book", "Bag"]
 
 Sales:
+
 East Branch = [10, 20, 5]
+
 West Branch = [15, 12, 8]
 
 ### Sample Output
 East total: 35
+
 Best product: Book
+
 West total: 35
+
 Best product: Pen
 
