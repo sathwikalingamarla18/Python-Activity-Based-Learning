@@ -33,14 +33,23 @@ flowchart TD
 
 ### Code
 marks = [[80, 70, 90], [60, 75, 65], [95, 88, 92]]
+
 names = ["Ana", "Ben", "Cia"]
+
 for i in range(len(marks)):
+
     print(names[i], "total =", sum(marks[i]))
+    
 for j in range(len(marks[0])):
+
     total = 0
+    
     for i in range(len(marks)):
+    
         total += marks[i][j]
+        
     print("Subject", j + 1, "average =", total / len(marks))
+    
 print("Top student:", names[marks.index(max(marks, key=sum))])
 
 ### Sample Input
@@ -48,17 +57,27 @@ Student Names: ["Ana", "Ben", "Cia"]
 
 Student Marks:
 [
+
     [80, 70, 90],
+    
     [60, 75, 65],
+    
     [95, 88, 92]
 ]
 
+
 ### Sample Output
 Ana total = 240
+
 Ben total = 200
+
 Cia total = 275
+
 Subject 1 average = 78.33333333333333
+
 Subject 2 average = 77.66666666666667
+
 Subject 3 average = 82.33333333333333
+
 Top student: Cia
 
